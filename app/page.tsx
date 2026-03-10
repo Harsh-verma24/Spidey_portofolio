@@ -4,6 +4,7 @@ import Hero from "./components/home/Hero";
 import VideoReveal from "./components/VideoReveal";
 import { useState } from "react";
 import Marque from "./components/Marque";
+import About from "./components/about/About";
 
 export default function Home() {
   const [isVideoPlaying, setIsVideoPlaying] = useState(true);
@@ -17,6 +18,8 @@ export default function Home() {
         <Hero />
       </div>
       <Marque/>
+      <About/>
+      
        </>
        }
     </>
