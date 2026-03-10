@@ -4,9 +4,8 @@ import "./globals.css";
 import Navbar from "./components/home/Navbar";
 
 const heatherGreen = localFont({
-  src: "../public/fonts/Heathergreen.otf",
+  src: "./fonts/Heathergreen.otf",
   variable: "--font-heather-green",
-  weight: "100 900",
 });
 
 export const metadata: Metadata = {
