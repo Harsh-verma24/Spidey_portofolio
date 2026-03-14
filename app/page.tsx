@@ -15,13 +15,17 @@ export default function Home() {
       {isVideoPlaying ?
        <VideoReveal onVideoEnd={() => setIsVideoPlaying(false)} /> : 
        <>
-       <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
+       <div id="home" className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
         <Hero />
       </div>
       <Marque/>
-      <About/>
+      <div id="about">
+        <About/>
+      </div>
       <Marque/>
-      <Skills/>
+      <div id="contact">
+        <Skills/>
+      </div>
        </>
        }
     </>
