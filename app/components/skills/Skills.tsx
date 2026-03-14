@@ -10,7 +10,7 @@ const frontendData = [{
 },
 {
   name: "JavaScript",
-  logo: "/logos/javascript.gif"
+  logo: "/logos/javascript.png"
 },
 {
   name: "React",
@@ -37,7 +37,7 @@ const backendData = [{
   logo: "/logos/mongodb.png"
 },
 {
-  name: "Spring Boot(still learning)",
+  name: "Spring Boot (Still learning)",
   logo: "/logos/springboot.png"
 },
 ]
@@ -67,13 +67,13 @@ const Skills = () => {
           <div id='card1' className="w-full">
             <img src="/images/Frame1.png" alt="Frontend Card" className="w-full h-auto object-contain" />
           </div>
-          <div className='absolute inset-0 flex flex-col items-center pt-24 px-6 text-white'>
+          <div className='absolute inset-0 flex flex-col items-center pt-24 px-6 text-white select-none'>
             <h1 className="text-4xl tracking-widest font-bold mb-8 text-center uppercase">Frontend</h1>
             <div className="flex flex-col gap-4 w-full px-2">
               {frontendData.map((item, index) => (
                 <div key={index} className='flex items-center gap-4 bg-black/40 p-2 rounded-lg backdrop-blur-sm hover:bg-black/60 transition-colors'>
                   <img src={item.logo} alt={item.name} className='w-8 h-8 object-contain' />
-                  <span className="font-sans font-bold tracking-wide">{item.name}</span>
+                  <span className="font-sans text-2xl font-bold tracking-wide">{item.name}</span>
                 </div>
               ))}
             </div>
@@ -85,13 +85,13 @@ const Skills = () => {
           <div id='card2' className="w-full">
             <img src="/images/Frame2.png" alt="Backend Card" className="w-full h-auto object-contain" />
           </div>
-          <div className='absolute inset-0 flex flex-col items-center pt-24 px-6 text-white'>
+          <div className='absolute inset-0 flex flex-col items-center pt-24 px-6 text-white select-none'>
             <h1 className="text-4xl tracking-widest font-bold mb-8 text-center uppercase">Backend</h1>
             <div className="flex flex-col gap-4 w-full px-2">
               {backendData.map((item, index) => (
                 <div key={index} className='flex items-center gap-4 bg-black/40 p-2 rounded-lg backdrop-blur-sm hover:bg-black/60 transition-colors'>
                   <img src={item.logo} alt={item.name} className='w-8 h-8 object-contain' />
-                  <span className="font-sans font-bold tracking-wide">{item.name}</span>
+                  <span className="font-sans text-2xl font-bold tracking-wide">{item.name}</span>
                 </div>
               ))}
             </div>
@@ -103,13 +103,13 @@ const Skills = () => {
           <div id='card3' className="w-full">
             <img src="/images/Frame3.png" alt="Tools Card" className="w-full h-auto object-contain" />
           </div>
-          <div className='absolute inset-0 flex flex-col items-center pt-24 px-6 text-white'>
+          <div className='absolute inset-0 flex flex-col items-center pt-24 px-6 text-white select-none'>
             <h1 className="text-4xl tracking-widest font-bold mb-8 text-center uppercase">Tools</h1>
             <div className="flex flex-col gap-4 w-full px-2">
               {ToolsData.map((item, index) => (
                 <div key={index} className='flex items-center gap-4 bg-black/40 p-2 rounded-lg backdrop-blur-sm hover:bg-black/60 transition-colors'>
                   <img src={item.logo} alt={item.name} className='w-8 h-8 object-contain' />
-                  <span className="font-sans font-bold tracking-wide">{item.name}</span>
+                  <span className="font-sans text-2xl font-bold tracking-wide">{item.name}</span>
                 </div>
               ))}
             </div>

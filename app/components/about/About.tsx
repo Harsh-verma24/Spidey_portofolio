@@ -9,7 +9,7 @@ const About = () => {
             </div>
 
             <div className='flex flex-col-reverse md:flex-row justify-center md:justify-evenly items-center w-full px-6 md:px-0 gap-10 md:gap-0'>
-                <div className='text-xl md:text-4xl text-white/80 font-sans text-center md:text-left max-w-lg md:max-w-2xl leading-relaxed'>
+                <div className='text-xl md:text-4xl select-none text-white/80 font-sans text-center md:text-left max-w-lg md:max-w-2xl leading-relaxed'>
                     <span>Like a certain web-slinger, I spend my time building things for the city — except my city is the web.
 
                         I'm Harsh, a developer passionate about crafting interactive frontends and powerful backends. I started with MERN, and now I'm exploring Java and Spring Boot to build scalable systems.
