@@ -5,6 +5,7 @@ import VideoReveal from "./components/VideoReveal";
 import { useState } from "react";
 import Marque from "./components/Marque";
 import About from "./components/about/About";
+import Skills from "./components/skills/Skills";
 
 export default function Home() {
   const [isVideoPlaying, setIsVideoPlaying] = useState(true);
@@ -19,7 +20,8 @@ export default function Home() {
       </div>
       <Marque/>
       <About/>
-      
+      <Marque/>
+      <Skills/>
        </>
        }
     </>
