@@ -56,50 +56,66 @@ const ToolsData = [{
 ]
 const Skills = () => {
   return (
-    <div className='flex items-center gap-8 h-screen flex-col w-screen justify-center'>
-      <div><h1 className='text-[10rem]'>Skills</h1></div>
-      <div className='flex rounded-2xl' >
-        <section>
-          <div id='card1'>
-          <img src="/images/Frame1.png" alt="" />
-        </div>
-        <div className='fixed '>
-          <h1>Frontend</h1>
-          {frontendData.map((item, index) => (
-            <div key={index} className='flex items-center gap-4'>
-              <img src={item.logo} alt={item.name} className='w-8 h-8' />
-              <span>{item.name}</span>
+    <div className='min-h-screen w-full bg-[url("/images/bg.jpg")] bg-cover bg-center flex flex-col items-center justify-center py-12 md:py-20'>
+      <div className="mb-12">
+        <h1 className='text-6xl md:text-9xl font-medium text-white font-sans tracking-wide'>Skills</h1>
+      </div>
+      <div className='flex flex-col lg:flex-row gap-8 items-center justify-center w-full px-4' >
+        
+        {/* Frontend Section */}
+        <section className='relative w-full max-w-sm transition-transform hover:scale-105 duration-300'>
+          <div id='card1' className="w-full">
+            <img src="/images/Frame1.png" alt="Frontend Card" className="w-full h-auto object-contain" />
+          </div>
+          <div className='absolute inset-0 flex flex-col items-center pt-24 px-6 text-white'>
+            <h1 className="text-4xl tracking-widest font-bold mb-8 text-center uppercase">Frontend</h1>
+            <div className="flex flex-col gap-4 w-full px-2">
+              {frontendData.map((item, index) => (
+                <div key={index} className='flex items-center gap-4 bg-black/40 p-2 rounded-lg backdrop-blur-sm hover:bg-black/60 transition-colors'>
+                  <img src={item.logo} alt={item.name} className='w-8 h-8 object-contain' />
+                  <span className="font-sans font-bold tracking-wide">{item.name}</span>
+                </div>
+              ))}
             </div>
-          ))}
+          </div>
+        </section>
 
-        </div>
-        </section>
-        <section><div id='card2'>
-          <img src="/images/Frame2.png" alt="" />
-        </div>
-        <div className='fixed'>
-          <h1>Backend</h1>
-          {backendData.map((item, index) => (
-            <div key={index} className='flex items-center gap-4'>
-              <img src={item.logo} alt={item.name} className='w-8 h-8' />
-              <span>{item.name}</span>
+        {/* Backend Section */}
+        <section className='relative w-full max-w-sm transition-transform hover:scale-105 duration-300'>
+          <div id='card2' className="w-full">
+            <img src="/images/Frame2.png" alt="Backend Card" className="w-full h-auto object-contain" />
+          </div>
+          <div className='absolute inset-0 flex flex-col items-center pt-24 px-6 text-white'>
+            <h1 className="text-4xl tracking-widest font-bold mb-8 text-center uppercase">Backend</h1>
+            <div className="flex flex-col gap-4 w-full px-2">
+              {backendData.map((item, index) => (
+                <div key={index} className='flex items-center gap-4 bg-black/40 p-2 rounded-lg backdrop-blur-sm hover:bg-black/60 transition-colors'>
+                  <img src={item.logo} alt={item.name} className='w-8 h-8 object-contain' />
+                  <span className="font-sans font-bold tracking-wide">{item.name}</span>
+                </div>
+              ))}
             </div>
-          ))}
-        </div>
+          </div>
         </section>
-        <section><div id='card3'>
-          <img src="/images/Frame3.png" alt="" />
-        </div>
-        <div className='fixed'>
-          <h1>Tools</h1>
-          {ToolsData.map((item, index) => (
-            <div key={index} className='flex items-center gap-4'>
-              <img src={item.logo} alt={item.name} className='w-8 h-8' />
-              <span>{item.name}</span>
+
+        {/* Tools Section */}
+        <section className='relative w-full max-w-sm transition-transform hover:scale-105 duration-300'>
+          <div id='card3' className="w-full">
+            <img src="/images/Frame3.png" alt="Tools Card" className="w-full h-auto object-contain" />
+          </div>
+          <div className='absolute inset-0 flex flex-col items-center pt-24 px-6 text-white'>
+            <h1 className="text-4xl tracking-widest font-bold mb-8 text-center uppercase">Tools</h1>
+            <div className="flex flex-col gap-4 w-full px-2">
+              {ToolsData.map((item, index) => (
+                <div key={index} className='flex items-center gap-4 bg-black/40 p-2 rounded-lg backdrop-blur-sm hover:bg-black/60 transition-colors'>
+                  <img src={item.logo} alt={item.name} className='w-8 h-8 object-contain' />
+                  <span className="font-sans font-bold tracking-wide">{item.name}</span>
+                </div>
+              ))}
             </div>
-          ))}
-        </div>
+          </div>
         </section>
+
       </div>
     </div>
   )
