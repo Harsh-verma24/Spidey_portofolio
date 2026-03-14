@@ -77,7 +77,7 @@ const Skills = () => {
         <section><div id='card2'>
           <img src="/images/Frame2.png" alt="" />
         </div>
-        <div>
+        <div className='fixed'>
           <h1>Backend</h1>
           {backendData.map((item, index) => (
             <div key={index} className='flex items-center gap-4'>
@@ -90,7 +90,7 @@ const Skills = () => {
         <section><div id='card3'>
           <img src="/images/Frame3.png" alt="" />
         </div>
-        <div>
+        <div className='fixed'>
           <h1>Tools</h1>
           {ToolsData.map((item, index) => (
             <div key={index} className='flex items-center gap-4'>
