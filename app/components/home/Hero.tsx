@@ -2,6 +2,12 @@ import React from 'react'
 import Button from './Button'
 
 const Hero = () => {
+  const handleResumeClick = () => {
+    window.open("https://drive.google.com/file/d/1U4O3fAOX-TpS5h1gg12RagUjbX9TIzlu/view", "_blank");
+  }
+  const handleContactMeClick = () => {
+    window.open("https://www.linkedin.com/in/harsh-verma-68115a326/", "_blank");
+  }
   return (
     <div className='bg-[url("/images/bg.jpg")] bg-cover bg-center w-screen h-screen flex flex-col justify-evenly items-center'>
       <div className="flex flex-col items-center">
@@ -16,8 +22,8 @@ const Hero = () => {
         <img className='w-full h-full object-left' src="/images/spidey.png" alt="Spider"  />
     </div> */}
       <div className='flex flex-col sm:flex-row gap-6 sm:gap-10'>
-        <Button content="Hire Me" />
-        <Button content="Contact Me" />
+        <Button content="Resume" clickHandler={handleResumeClick} />
+        <Button content="Contact Me" clickHandler={handleContactMeClick} />
       </div>
     </div>
   )
