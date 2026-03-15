@@ -47,7 +47,7 @@ const ToolsData = [{
 },
 {
   name:"Vercel",
-  logo: "/logos/vercel.png"
+  logo: "/logos/vercelIcon.png"
 },
 {
   name: "Docker",
@@ -60,20 +60,20 @@ const Skills = () => {
       <div className="mb-12">
         <h1 className='text-6xl md:text-9xl font-medium text-white font-sans tracking-wide'>Skills</h1>
       </div>
-      <div className='flex flex-col lg:flex-row gap-8 items-center justify-center w-full px-4' >
+      <div className='flex flex-col lg:flex-row gap-8 items-center lg:items-start justify-center w-full px-4' >
         
         {/* Frontend Section */}
-        <section className='relative w-full max-w-sm transition-transform hover:scale-105 duration-300'>
-          <div id='card1' className="w-full">
-            <img src="/images/Frame1.png" alt="Frontend Card" className="w-full h-auto object-contain" />
+        <section className='relative w-full max-w-sm h-144 transition-transform hover:scale-105 duration-300'>
+          <div id='card1' className="w-full h-full">
+            <img src="/images/Frame1.png" alt="Frontend Card" className="w-full h-full object-cover" />
           </div>
           <div className='absolute inset-0 flex flex-col items-center pt-24 px-6 text-white select-none'>
-            <h1 className="text-4xl tracking-widest font-bold mb-8 text-center uppercase">Frontend</h1>
+            <h1 className="text-4xl tracking-[0.18em] font-extrabold mb-8 text-center uppercase font-[system-ui]">Frontend</h1>
             <div className="flex flex-col gap-4 w-full px-2">
               {frontendData.map((item, index) => (
-                <div key={index} className='flex items-center gap-4 bg-black/40 p-2 rounded-lg backdrop-blur-sm hover:bg-black/60 transition-colors'>
+                <div key={index} className='flex  items-center gap-4 bg-black/40 p-2 rounded-lg backdrop-blur-sm hover:bg-black/60 transition-colors'>
                   <img src={item.logo} alt={item.name} className='w-8 h-8 object-contain' />
-                  <span className="font-sans text-2xl font-bold tracking-wide">{item.name}</span>
+                  <span className="text-xl leading-tight font-semibold tracking-normal font-[system-ui]">{item.name}</span>
                 </div>
               ))}
             </div>
@@ -81,17 +81,17 @@ const Skills = () => {
         </section>
 
         {/* Backend Section */}
-        <section className='relative w-full max-w-sm transition-transform hover:scale-105 duration-300'>
-          <div id='card2' className="w-full">
-            <img src="/images/Frame2.png" alt="Backend Card" className="w-full h-auto object-contain" />
+        <section className='relative w-full max-w-sm h-144 transition-transform hover:scale-105 duration-300'>
+          <div id='card2' className="w-full h-full">
+            <img src="/images/Frame2.png" alt="Backend Card" className="w-full h-full object-cover" />
           </div>
           <div className='absolute inset-0 flex flex-col items-center pt-24 px-6 text-white select-none'>
-            <h1 className="text-4xl tracking-widest font-bold mb-8 text-center uppercase">Backend</h1>
+            <h1 className="text-4xl tracking-[0.18em] font-extrabold mb-8 text-center uppercase font-[system-ui]">Backend</h1>
             <div className="flex flex-col gap-4 w-full px-2">
               {backendData.map((item, index) => (
                 <div key={index} className='flex items-center gap-4 bg-black/40 p-2 rounded-lg backdrop-blur-sm hover:bg-black/60 transition-colors'>
                   <img src={item.logo} alt={item.name} className='w-8 h-8 object-contain' />
-                  <span className="font-sans text-2xl font-bold tracking-wide">{item.name}</span>
+                  <span className="text-xl leading-tight font-semibold tracking-normal font-[system-ui]">{item.name}</span>
                 </div>
               ))}
             </div>
@@ -99,17 +99,17 @@ const Skills = () => {
         </section>
 
         {/* Tools Section */}
-        <section className='relative w-full max-w-sm transition-transform hover:scale-105 duration-300'>
-          <div id='card3' className="w-full">
-            <img src="/images/Frame3.png" alt="Tools Card" className="w-full h-auto object-contain" />
+        <section className='relative w-full max-w-sm h-144 transition-transform hover:scale-105 duration-300'>
+          <div id='card3' className="w-full h-full">
+            <img src="/images/Frame3.png" alt="Tools Card" className="w-full h-full object-cover" />
           </div>
           <div className='absolute inset-0 flex flex-col items-center pt-24 px-6 text-white select-none'>
-            <h1 className="text-4xl tracking-widest font-bold mb-8 text-center uppercase">Tools</h1>
+            <h1 className="text-4xl tracking-[0.18em] font-extrabold mb-8 text-center uppercase font-[system-ui]">Tools</h1>
             <div className="flex flex-col gap-4 w-full px-2">
               {ToolsData.map((item, index) => (
                 <div key={index} className='flex items-center gap-4 bg-black/40 p-2 rounded-lg backdrop-blur-sm hover:bg-black/60 transition-colors'>
                   <img src={item.logo} alt={item.name} className='w-8 h-8 object-contain' />
-                  <span className="font-sans text-2xl font-bold tracking-wide">{item.name}</span>
+                  <span className="text-xl leading-tight font-semibold tracking-normal font-[system-ui]">{item.name}</span>
                 </div>
               ))}
             </div>
