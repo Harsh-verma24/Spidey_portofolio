@@ -5,6 +5,7 @@ import { SpeedInsights } from "@vercel/speed-insights/next"
 import "./globals.css";
 import Navbar from "./components/home/Navbar";
 import SmoothScroll from "./components/SmoothScroll";
+import Footer from "./components/Footer";
 
 const heatherGreen = localFont({
   src: "./fonts/Heathergreen.otf",
@@ -49,6 +50,7 @@ export default function RootLayout({
         <Analytics />
         <SpeedInsights />
         <SmoothScroll />
+        <Footer />
       </body>
     </html>
   );

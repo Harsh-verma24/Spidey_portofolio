@@ -49,7 +49,7 @@ const Contact = () => {
                             </a>
 
                             <a
-                                href='https://x.com/'
+                                href='https://x.com/harsh_vrma24'
                                 target='_blank'
                                 rel='noopener noreferrer'
                                 className='flex items-center justify-between rounded-xl border border-white/20 px-4 py-3 text-white/85 hover:text-white hover:border-white/40 transition-colors duration-200 text-base md:text-2xl font-thin leading-tight tracking-wide'
@@ -61,7 +61,7 @@ const Contact = () => {
                             </a>
 
                             <a
-                                href='https://linkedin.com/'
+                                href='https://www.linkedin.com/in/harsh-verma-68115a326/'
                                 target='_blank'
                                 rel='noopener noreferrer'
                                 className='flex items-center justify-between rounded-xl border border-white/20 px-4 py-3 text-white/85 hover:text-white hover:border-white/40 transition-colors duration-200 text-base md:text-2xl font-thin leading-tight tracking-wide'
