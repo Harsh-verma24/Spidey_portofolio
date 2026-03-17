@@ -16,7 +16,7 @@ const ProjectCard = ({ name, description, githubLink, previewImg }: ProjectCardP
             )}
             <div className='flex flex-col gap-3 p-5'>
                 <h1 className='text-2xl md:text-3xl font-thin text-white leading-tight tracking-wider'>{name}</h1>
-                <p className='text-base md:text-xl font-thin text-white/70 leading-tight tracking-wider'>{description}</p>
+                <p className='text-base md:text-xl font-extralight text-white/70 leading-tight tracking-wider'>{description}</p>
                 <a
                     href={githubLink}
                     target="_blank"
