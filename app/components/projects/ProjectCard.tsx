@@ -1,4 +1,5 @@
 import { ExternalLink } from 'lucide-react';
+import Image from 'next/image';
 import React from 'react'
 interface ProjectCardProps {
     name: string;
@@ -10,8 +11,8 @@ const ProjectCard = ({ name, description, githubLink, previewImg }: ProjectCardP
     return (
         <div className='flex flex-col w-full md:w-96 rounded-2xl border border-white/20 bg-white/5 backdrop-blur-sm overflow-hidden shadow-lg hover:shadow-xl hover:border-white/40 transition-all duration-300'>
             {previewImg && (
-                <div className='w-full h-48 md:h-44 overflow-hidden'>
-                    <img src={previewImg} alt={name} className='w-full h-full object-cover' />
+                <div className='relative w-full h-48 md:h-44 overflow-hidden'>
+                    <Image src={previewImg} alt={name} fill sizes='(max-width: 768px) 100vw, 384px' className='object-cover' />
                 </div>
             )}
             <div className='flex flex-col gap-3 p-5'>

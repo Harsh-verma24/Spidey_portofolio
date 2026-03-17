@@ -17,8 +17,8 @@ const Navbar = () => {
                 <ul className="flex gap-8 text-2xl tracking-wide font-sans font-medium select-none">
                     <li onClick={() => scrollToSection('home')} className="hover:bg-gradient-to-r hover:from-[#e32832] hover:to-black hover:bg-clip-text hover:text-transparent cursor-pointer transition-all duration-300">Home</li>
                     <li onClick={() => scrollToSection('about')} className="hover:bg-gradient-to-r hover:from-[#e32832] hover:to-black hover:bg-clip-text hover:text-transparent cursor-pointer transition-all duration-300">About</li>
-                    <li onClick={() => scrollToSection('project')} className="hover:bg-gradient-to-r hover:from-[#e32832] hover:to-black hover:bg-clip-text hover:text-transparent cursor-pointer transition-all duration-300">Projects</li>
                     <li onClick={() => scrollToSection('skills')} className="hover:bg-gradient-to-r hover:from-[#e32832] hover:to-black hover:bg-clip-text hover:text-transparent cursor-pointer transition-all duration-300">Skills</li>
+                    <li onClick={() => scrollToSection('project')} className="hover:bg-gradient-to-r hover:from-[#e32832] hover:to-black hover:bg-clip-text hover:text-transparent cursor-pointer transition-all duration-300">Projects</li>
                     <li onClick={() => scrollToSection('contact')} className="hover:bg-gradient-to-r hover:from-[#e32832] hover:to-black hover:bg-clip-text hover:text-transparent cursor-pointer transition-all duration-300">Contact</li>
                 </ul>
 
