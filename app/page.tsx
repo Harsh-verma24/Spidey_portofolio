@@ -17,21 +17,21 @@ export default function Home() {
       {isVideoPlaying ?
        <VideoReveal onVideoEnd={() => setIsVideoPlaying(false)} /> : 
        <>
-       <div id="home" className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
+       <div id="home" className="select-none flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
         <Hero />
       </div>
       <Marque/>
-      <div id="about">
+      <div className="select-none" id="about">
         <About/>
       </div>
       <Marque/>
-      <div id="skills">
+      <div className="select-none" id="skills">
         <Skills/>
       </div>
       <Marque/>
-      <div id="project"><Project/></div>
+      <div className="select-none" id="project"><Project/></div>
       <Marque/>
-      <div id="contact">
+      <div className="select-none" id="contact">
         <Contact/>
       </div>
        </>
