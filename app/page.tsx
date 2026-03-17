@@ -6,6 +6,7 @@ import { useState } from "react";
 import Marque from "./components/Marque";
 import About from "./components/about/About";
 import Skills from "./components/skills/Skills";
+import Project from "./components/projects/Project";
 
 export default function Home() {
   const [isVideoPlaying, setIsVideoPlaying] = useState(true);
@@ -26,6 +27,8 @@ export default function Home() {
       <div id="contact">
         <Skills/>
       </div>
+      <Marque/>
+      <div id="project"><Project/></div>
        </>
        }
     </>
