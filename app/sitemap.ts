@@ -9,7 +9,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: new Date("2026-03-23"),
       changeFrequency: "monthly",
       priority: 1,
-      images: [`${baseUrl}/opengraph-image.png`],
+      images: [`${baseUrl}/opengraph-image`],
     },
   ];
 }

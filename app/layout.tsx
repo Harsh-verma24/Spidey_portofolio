@@ -16,11 +16,11 @@ const heatherGreen = localFont({
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.spideyharsh.me"),
   title: {
-    default: "Harsh Verma | Full-Stack Developer Portfolio",
+    default: "Harsh Verma | Full-Stack Developer Portfolio and Projects",
     template: "%s | Harsh Verma",
   },
   description:
-    "Harsh Verma is a full-stack developer building modern web applications with Next.js, React, Node.js, MongoDB, and Java. Explore projects, skills, and contact details.",
+    "Explore the portfolio of Harsh Verma, a full-stack developer building high-performance products with Next.js, React, Node.js, MongoDB, and Java.",
   keywords: [
     "Harsh Verma",
     "Harsh Verma portfolio",
@@ -67,17 +67,17 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "Harsh Verma | Full-Stack Developer Portfolio",
+    title: "Harsh Verma | Full-Stack Developer Portfolio and Projects",
     description:
-      "Portfolio of Harsh Verma featuring full-stack web projects built with Next.js, React, Node.js, and Java.",
+      "Explore full-stack projects, technical strengths, and real-world builds by Harsh Verma using Next.js, React, Node.js, MongoDB, and Java.",
     url: "https://www.spideyharsh.me",
     siteName: "Harsh Verma Portfolio",
     images: [
       {
-        url: "/opengraph-image.png",
+        url: "/opengraph-image",
         width: 1200,
         height: 630,
-        alt: "Harsh Verma - Portfolio",
+        alt: "Harsh Verma portfolio preview with projects and call to action",
       },
     ],
     locale: "en_US",
@@ -85,10 +85,10 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Harsh Verma | Full-Stack Developer Portfolio",
+    title: "Harsh Verma | Full-Stack Developer Portfolio and Projects",
     description:
-      "Explore projects, skills, and contact details of Harsh Verma, a full-stack developer focused on modern web applications.",
-    images: ["/opengraph-image.png"],
+      "Explore full-stack projects, technical strengths, and practical builds by Harsh Verma. View projects and connect for collaboration.",
+    images: ["/opengraph-image"],
   },
 };
 
