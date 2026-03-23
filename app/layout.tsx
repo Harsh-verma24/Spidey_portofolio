@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import localFont from "next/font/local";
 import Script from "next/script";
 import { Analytics } from "@vercel/analytics/next"
@@ -14,16 +14,17 @@ const heatherGreen = localFont({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://www.spideyharsh.me/"),
+  metadataBase: new URL("https://www.spideyharsh.me"),
   title: {
-    default: "Harsh Verma | Full-Stack Developer | USICT (GGSIPU)",
+    default: "Harsh Verma | Full-Stack Developer Portfolio",
     template: "%s | Harsh Verma",
   },
   description:
-    "Full-stack developer skilled in MERN stack. BTech in IT (2024-28) at University School of Information and Communication Technology (USICT), Guru Gobind Singh Indraprastha University (GGSIPU). Currently learning Spring Boot and DSA with Java. Explore my projects and experience.",
+    "Harsh Verma is a full-stack developer building modern web applications with Next.js, React, Node.js, MongoDB, and Java. Explore projects, skills, and contact details.",
   keywords: [
     "Harsh Verma",
-    "Full-stack developer",
+    "Harsh Verma portfolio",
+    "Full-stack developer portfolio",
     "USICT",
     "University School of Information and Communication Technology",
     "GGSIPU",
@@ -40,10 +41,20 @@ export const metadata: Metadata = {
   authors: [{ name: "Harsh Verma" }],
   creator: "Harsh Verma",
   publisher: "Harsh Verma",
+  category: "technology",
   applicationName: "Harsh Verma Portfolio",
-  alternates: {
-    canonical: "https://www.spideyharsh.me/",
+  verification: {
+    google: "51LPhSkC5MEKSF32aak17orPuLRLgyqSwHkN87XsAQk",
   },
+  alternates: {
+    canonical: "/",
+  },
+  icons: {
+    icon: "/icon.png",
+    shortcut: "/icon.png",
+    apple: "/icon.png",
+  },
+  referrer: "origin-when-cross-origin",
   robots: {
     index: true,
     follow: true,
@@ -56,9 +67,10 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "Harsh Verma | Full-Stack Developer | USICT (GGSIPU)",
-    description: "Full-stack developer skilled in MERN stack. BTech in IT (2024-28) at USICT, GGSIPU. Currently learning Spring Boot and DSA with Java. Explore my projects and experience.",
-    url: "https://www.spideyharsh.me/",
+    title: "Harsh Verma | Full-Stack Developer Portfolio",
+    description:
+      "Portfolio of Harsh Verma featuring full-stack web projects built with Next.js, React, Node.js, and Java.",
+    url: "https://www.spideyharsh.me",
     siteName: "Harsh Verma Portfolio",
     images: [
       {
@@ -73,11 +85,15 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Harsh Verma | Full-Stack Developer | USICT (GGSIPU)",
+    title: "Harsh Verma | Full-Stack Developer Portfolio",
     description:
-      "Explore projects, skills, and work by Harsh Verma, BTech IT (2024-28) at USICT, GGSIPU, focused on modern web experiences.",
+      "Explore projects, skills, and contact details of Harsh Verma, a full-stack developer focused on modern web applications.",
     images: ["/opengraph-image.png"],
   },
+};
+
+export const viewport: Viewport = {
+  themeColor: "#0b0f19",
 };
 
 export default function RootLayout({
@@ -87,10 +103,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <head><meta name="google-site-verification" content="51LPhSkC5MEKSF32aak17orPuLRLgyqSwHkN87XsAQk" /></head>
+      <head />
       {/* <!-- Google tag (gtag.js) --> */}
       <Script async src="https://www.googletagmanager.com/gtag/js?id=G-S0FDJW5NZX"></Script>
-      <Script>{
+      <Script id="gtag-init">{
         `const dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments)}
         gtag('js', new Date());
