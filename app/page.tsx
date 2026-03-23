@@ -58,6 +58,9 @@ const structuredData = {
       sameAs: [
         "https://github.com/Harsh-verma24",
         "https://www.linkedin.com/in/harsh-verma-68115a326/",
+        "https://x.com/harsh_vrma24",
+        "https://www.instagram.com/urr.harsh_/",
+        "https://leetcode.com/u/spidermanhoon",
       ],
       jobTitle: "Full-Stack Developer",
       knowsAbout: ["React", "Next.js", "Node.js", "MongoDB", "Java", "Spring Boot"],
