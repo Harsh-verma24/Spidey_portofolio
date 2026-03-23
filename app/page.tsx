@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import HomePageClient from "./HomePageClient";
 
 export const metadata: Metadata = {
-  title: "Harsh Verma | Full-Stack Developer Portfolio",
+  title: "Harsh Verma | Full-Stack Developer Portfolio and Projects",
   description:
-    "Portfolio website of Harsh Verma, a full-stack developer building performant web apps with Next.js, React, Node.js, MongoDB, and Java.",
+    "Explore the portfolio of Harsh Verma, a full-stack developer building high-performance products with Next.js, React, Node.js, MongoDB, and Java.",
   keywords: [
     "Harsh Verma",
     "Harsh Verma portfolio",
@@ -23,26 +23,26 @@ export const metadata: Metadata = {
     follow: true,
   },
   openGraph: {
-    title: "Harsh Verma | Full-Stack Developer Portfolio",
+    title: "Harsh Verma | Full-Stack Developer Portfolio and Projects",
     description:
-      "Explore full-stack projects, technical skills, and contact details of Harsh Verma.",
+      "Explore full-stack projects, technical strengths, and real-world builds by Harsh Verma using Next.js, React, Node.js, MongoDB, and Java.",
     url: "https://www.spideyharsh.me",
     type: "website",
     images: [
       {
-        url: "/opengraph-image.png",
+        url: "/opengraph-image",
         width: 1200,
         height: 630,
-        alt: "Harsh Verma Full-Stack Developer Portfolio",
+        alt: "Harsh Verma portfolio preview with projects and call to action",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Harsh Verma | Full-Stack Developer Portfolio",
+    title: "Harsh Verma | Full-Stack Developer Portfolio and Projects",
     description:
-      "Explore full-stack projects, technical skills, and contact details of Harsh Verma.",
-    images: ["/opengraph-image.png"],
+      "Explore full-stack projects, technical strengths, and practical builds by Harsh Verma. View projects and connect for collaboration.",
+    images: ["/opengraph-image"],
   },
 };
 
@@ -85,7 +85,7 @@ const structuredData = {
       },
       primaryImageOfPage: {
         "@type": "ImageObject",
-        url: "https://www.spideyharsh.me/opengraph-image.png",
+        url: "https://www.spideyharsh.me/opengraph-image",
       },
       inLanguage: "en",
       description:
