@@ -4,7 +4,7 @@ import { ExternalLink } from 'lucide-react'
 
 const Project = () => {
     return (
-        <div className='px-4 md:px-8 py-16'>
+        <div className=' bg-black px-4 md:px-8 py-16'>
             <div className="mb-12 flex items-center justify-center">
                 <h1 className='text-6xl md:text-9xl font-medium text-white font-sans tracking-wide'>Projects</h1>
             </div>

@@ -4,7 +4,7 @@ import { ArrowUpFromDot, Heart } from 'lucide-react'
 
 const Footer = () => {
   return (
-    <div className='flex flex-col items-center justify-around gap-4 p-6 bg-black/50 text-white'>
+    <div className='flex flex-col items-center justify-around gap-4 p-6 bg-black text-white'>
         <div className='aspect-square rounded-full p-4 bg-gray-700'><ArrowUpFromDot onClick={()=>{
             const element = document.getElementById('home');
             if (element) {
