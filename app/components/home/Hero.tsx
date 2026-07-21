@@ -3,7 +3,7 @@ import Button from './Button'
 
 const Hero = () => {
   const handleResumeClick = () => {
-    window.open("https://drive.google.com/file/d/1Pp1RWtirSJDVNGR_6HTHUCUodVhFhKRz/view?usp=sharing", "_blank");
+    window.open("https://drive.google.com/file/d/1GYloxEzsU0rWnhaAKe78MlF1GpuJIF9t/view?usp=sharing");
   }
   const handleContactMeClick = () => {
     window.open("https://www.linkedin.com/in/harsh-verma-68115a326/", "_blank");
