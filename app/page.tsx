@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "/open-image",
+        url: "/opengraph-image",
         width: 1200,
         height: 630,
         alt: "Harsh Verma portfolio preview with projects and call to action",
@@ -42,7 +42,7 @@ export const metadata: Metadata = {
     title: "Harsh Verma | Full-Stack Developer Portfolio and Projects",
     description:
       "Explore full-stack projects, technical strengths, and practical builds by Harsh Verma. View projects and connect for collaboration.",
-    images: ["/open-image"],
+    images: ["/opengraph-image"],
   },
 };
 
